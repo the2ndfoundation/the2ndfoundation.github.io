@@ -6,13 +6,33 @@
 -->
 <html>
 	<head>
-		<title>Landing - Forty by HTML5 UP</title>
+		<title>Robotics | TSF</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        <link rel="stylesheet" href="css/blueimp-gallery.css">
+        <link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
+        <link rel="stylesheet" href="css/blueimp-gallery-video.css">
+        <link rel="stylesheet" href="css/demo/demo.css">
+        
+        <script>
+			blueimp.Gallery(
+				document.getElementById('id').getElementsByTagName('a'),
+				{
+					container: '#blueimp-gallery-carousel',
+					carousel: true
+				}
+			);
+			var gallery = blueimp.Gallery([
+				'images/robo1.jpg',
+				'images/robo2.jpg',
+				'images/robo3.jpg'
+			]);
+		</script>
 	</head>
 	<body>
 
@@ -50,7 +70,7 @@
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Landing</h1>
+								<h1>Robotics</h1>
 							</header>
 							<div class="content">
 								<p>Lorem ipsum dolor sit amet nullam consequat<br />
@@ -66,77 +86,21 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Sed amet aliquam</h2>
+										<h2></h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+									<p>Content to be added by Unni</p>
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic08.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Orci maecenas</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Rhoncus magna</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Sed nunc ligula</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
-
+						<!-- Gallery -->
+                       <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+                        <div id="blueimp-image-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <a class="play-pause"></a>
+                        </div>
 					</div>
 
 				<!-- Contact -->
@@ -208,6 +172,17 @@
 
 			</div>
 
+		<!-- Gallery Codes-->
+        <script src="js/blueimp-helper.js"></script>
+		<script src="js/blueimp-gallery.js"></script>
+        <script src="js/blueimp-gallery-fullscreen.js"></script>
+        <script src="js/blueimp-gallery-indicator.js"></script>
+        <script src="js/blueimp-gallery-video.js"></script>
+        <script src="js/blueimp-gallery-vimeo.js"></script>
+        <script src="js/blueimp-gallery-youtube.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/jquery.blueimp-gallery.js"></script>
+        <script src="js/demo/demo.js"></script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
