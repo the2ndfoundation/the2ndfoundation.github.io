@@ -2198,6 +2198,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		max-width: 100%;
 	}
 
 		.image img {
@@ -2227,21 +2228,21 @@
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			max-width: 100%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				max-width: 100%;
 			}
 
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
-			width: 100%;
+			max-width: 100%;
 		}
 
 			.image.main img {
-				width: 100%;
+				max-width: 100%;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -3986,3 +3987,20 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}	
